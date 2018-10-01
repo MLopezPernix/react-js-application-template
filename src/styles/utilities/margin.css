@@ -1,0 +1,129 @@
+/* Margin utilities */
+
+/* Little margin*/
+.mt-lil {
+  margin-top: .3em;
+}
+
+.mb-lil {
+  margin-bottom: .3em;
+}
+
+.mr-lil {
+  margin-right: .3em;
+}
+
+.ml-lil {
+  margin-left: .3em;
+}
+
+.mx-lil {
+  margin-left: .3em;
+  margin-right: .3em;
+}
+
+.my-lil {
+  margin-top: .3em;
+  margin-bottom: .3em;
+}
+
+.m-lil {
+  margin: .3em;
+}
+
+/* Middle margin*/
+.mt-mid {
+  margin-top: 1em;
+}
+
+.mb-mid {
+  margin-bottom: 1em;
+}
+
+.mr-mid {
+  margin-right: 1em;
+}
+
+.ml-mid {
+  margin-left: 1em;
+}
+
+.mx-mid {
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+.my-mid {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.m-mid {
+  margin: 1em;
+}
+
+/* Big margin*/
+.mt-big {
+  margin-top: 2em;
+}
+
+.mb-big {
+  margin-bottom: 2em;
+}
+
+.mr-big {
+  margin-right: 2em;
+}
+
+.ml-big {
+  margin-left: 2em;
+}
+
+.mx-big {
+  margin-left: 2em;
+  margin-right: 2em;
+}
+
+.my-big {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.m-big {
+  margin: 2em;
+}
+
+/* 0 margin*/
+.mt-0 {
+  margin-top: 0;
+}
+
+.mb-0 {
+  margin-bottom: 0;
+}
+
+.mr-0 {
+  margin-right: 0;
+}
+
+.ml-0 {
+  margin-left: 0;
+}
+
+.mx-0 {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.my-0 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.m-0 {
+  margin: 0;
+}
+
+.m-auto {
+  margin: auto;
+}

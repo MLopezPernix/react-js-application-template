@@ -1,0 +1,31 @@
+.background--primary {
+  background: #FFCD00;
+}
+
+.background--secondary {
+  background: #D29F13;
+}
+
+.background--black {
+  background: #000;
+}
+
+.background--white {
+  background: #fff;
+}
+
+.background--gray {
+  background-color: #ECECEB;
+}
+
+.background--dark-gray {
+  background-color: #A9A9A9;
+}
+
+.background--light-gray {
+  background-color: #e4e7e7bd;
+}
+
+.background--light-green {
+  background-color: #00800091;
+}

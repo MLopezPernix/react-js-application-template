@@ -1,0 +1,94 @@
+/* Padding utilities */
+
+/* Little padding*/
+.pt-lil {
+  padding-top: .3em;
+}
+
+.pb-lil {
+  padding-bottom: .3em;
+}
+
+.pr-lil {
+  padding-right: .3em;
+}
+
+.pl-lil {
+  padding-left: .3em;
+}
+
+.px-lil {
+  padding-left: .3em;
+  padding-right: .3em;
+}
+
+.py-lil {
+  padding-top: .3em;
+  padding-bottom: .3em;
+}
+
+.p-lil {
+  padding: .3em;
+}
+
+/* Middle padding*/
+.pt-mid {
+  padding-top: 1em;
+}
+
+.pb-mid {
+  padding-bottom: 1em;
+}
+
+.pr-mid {
+  padding-right: 1em;
+}
+
+.pl-mid {
+  padding-left: 1em;
+}
+
+.px-mid {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.py-mid {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.p-mid {
+  padding: 1em;
+}
+
+/* Big padding*/
+.pt-big {
+  padding-top: 2em;
+}
+
+.pb-big {
+  padding-bottom: 2em;
+}
+
+.pr-big {
+  padding-right: 2em;
+}
+
+.pl-big {
+  padding-left: 2em;
+}
+
+.px-big {
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.py-big {
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+.p-big {
+  padding: 2em;
+}

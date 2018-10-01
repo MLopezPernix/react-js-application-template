@@ -1,6 +1,12 @@
 # React JS Application Template
 
 ### Running the app
+
+**Install React**
+```shell
+npm install -g create-react-app
+```
+
 **Install dependencies**
 ```shell
 yarn install

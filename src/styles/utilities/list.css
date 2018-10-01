@@ -1,0 +1,7 @@
+.list--circled {
+  list-style-type: disc;
+}
+
+.fa-ul .fa-li {
+  margin-top: 2px;
+}
