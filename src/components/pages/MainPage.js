@@ -12,19 +12,19 @@ class MainPage extends React.Component {
   }
 
   render() {
-    // const { name, email } = this.state
+    const { name, email } = this.state
     return (
       <div>
         <h1 className>Welcome: </h1>
 
-        {/* <div className="w-100 d-flex m-lil justify-content--space-around">
+        <div className="w-100 d-flex m-lil justify-content--space-around">
           <label className="w-100 d-flex justify-content-center personal-information--input">Your name: {name}</label>
         </div>
         <div className="w-100 d-flex m-lil justify-content--space-around">
           <label className="w-100 d-flex justify-content-center personal-information--input">Your email: {email}</label>
-        </div> */}
+        </div>
 
-        {/* <Link to="/" className="button--submit d-flex p-lil w-50 m-auto justify-content-center background--light-green color--white">Back</Link> */}
+        <Link to="/" className="button--submit d-flex p-lil w-50 m-auto justify-content-center background--light-green color--white">Back</Link>
       </div>
     )
   }
