@@ -6,13 +6,13 @@ import "../../styles/pages/mainPage.css"
 
 class MainPage extends React.Component {
 
-  constructor(props) {
-    super(props)
-    this.state = props.location.state
-  }
+  // constructor(props) {
+  //   super(props)
+  //   this.state = props.location.state
+  // }
 
   render() {
-    const { name, email } = this.state
+    const { name, email } = this.props.location.state
     return (
       <div>
         <h1 className>Welcome: </h1>

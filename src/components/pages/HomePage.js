@@ -1,20 +1,20 @@
 import React from "react"
-import 'react-dates/initialize';
-import { SingleDatePicker } from "react-dates";
-import { Link } from "react-router-dom";
+import 'react-dates/initialize'
+import { Link } from "react-router-dom"
 
-import "react-dates/lib/css/_datepicker.css";
+import { connect } from "react-redux"
+import { updateUser, getUsers } from "../../redux/modules/users"
+import { bindActionCreators } from "redux"
+
+import "react-dates/lib/css/_datepicker.css"
 import "../../styles/pages/homePage.css"
 
-import moment from "moment";
 
 class HomePage extends React.Component {
   state = {
     name: "",
     email: "",
-    password: "",
-    focused: false,
-    date: moment()
+    password: ""
   }
 
   updatePersonalInformation = (field, value) => {
@@ -23,15 +23,26 @@ class HomePage extends React.Component {
     }))
   }
 
+  // componentWillMount() {
+  //   const { getUsers, usersList } = this.props;
+  //   if (!usersList) {
+  //     getUsers()
+  //   }
+  // }
+
+  // componentWillReceiveProps(nextProps) {
+  //   console.log('Lista usuarios: ', nextProps.usersList)
+  // }
+
+  // updatePersonalInformation = (field, value) => {
+  //   const { updateUser } = this.props
+  //   updateUser(field, value)
+  // }
+
   render() {
-    const { name, email, date, focused } = this.state
     return (
       <div>
         <h3 className="text--center mx-lil my-mid">React Workshop</h3>
-        <div>
-          <img className="w-100" src={require("../../assets/images/react-img.jpg")} />
-        </div>
-
         <div className="w-50 text--center m-auto d-flex flex-direction--column personal-information--form">
 
           <div className="w-100 d-flex m-lil justify-content--space-around">
@@ -46,27 +57,24 @@ class HomePage extends React.Component {
             <input type="password" onChange={(value) => this.updatePersonalInformation("password", value.target.value)} className="w-100 background--light-gray personal-information--input" placeholder="Password" />
           </div>
 
-          <div className="w-100 d-flex m-lil justify-content--space-between color--light-gray aling-items--center">
-            <label>Birthday:</label>
-            <SingleDatePicker
-              date={date}
-              placeholder="Birthday"
-              numberOfMonths={1}
-              hideKeyboardShortcutsPanel={true}
-              onDateChange={(date) => this.updatePersonalInformation("date", date)}
-              focused={focused}
-              readOnly={true}
-              noBorder={true}
-              onFocusChange={({ focused }) => this.setState({ focused })}
-            />
-          </div>
-
         </div>
-        <Link to={{ pathname: "/mainPage", state: { name: name, email: email } }} className="button--submit d-flex p-lil w-50 m-auto justify-content-center background--light-green color--white">Submit</Link>
-      {/* <Link to="/mainPage" className="button--submit d-flex p-lil w-50 m-auto justify-content-center background--light-green color--white">Next</Link> */}
+        <Link to={{ pathname: "/mainPage", state: { ...this.state } }} className="button--submit d-flex p-lil w-50 m-auto justify-content-center background--light-green color--white">Submit</Link>
       </div>
     )
   }
 }
 
-export default HomePage
+const mapDispatchToProps = (dispatch) => {
+  return bindActionCreators({
+    updateUser,
+    getUsers
+  }, dispatch)
+}
+
+const mapStateToProps = () => ({
+  // currentStep: state.move.currentStep
+})
+
+export default connect(mapStateToProps, mapDispatchToProps)(HomePage)
+
+// export default HomePage
